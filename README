@@ -1,0 +1,6 @@
+Run script/nectar_debug_server.pl to test the application.
+
+$catalyst.pl Nectar::Debug
+$cd Nectar-Debug
+$./script/nectar_debug_create.pl controller Auth
+$./script/nectar_debug_create.pl model NECTAR DBIC::Schema Nectar::Schema::NECTAR create=static dbi:mysql:dbname=NECTAR\;host=DB_HOST USER PASSWD 
