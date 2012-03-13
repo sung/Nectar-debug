@@ -30,8 +30,8 @@ sub index :Path :Args(0) {
 sub register :Path('/register') {
     my ( $self, $c ) = @_;
 
-	my $new_user= $c->model("NECTAR::User")->new_result({}); # this fails.
-	#my $new_user= $c->model("NECTAR::User")->find(2); # this works - updates with no fails.
+	#my $new_user= $c->model("NECTAR::User")->new_result({}); # this fails.
+	my $new_user= $c->model("NECTAR::User")->find(1); # this works - updates with no fails.
 
 	use Nectar::Form::Register;
 	my $form = Nectar::Form::Register->new(item=>$new_user);
