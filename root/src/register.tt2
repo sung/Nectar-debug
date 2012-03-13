@@ -1,0 +1,7 @@
+[% meta.title = 'User registration' %]
+
+[% form.render %]
+
+<div>
+	<a href="[% c.uri_for(c.controller.action_for('/')) %]">Home?</a></p>
+</div>
