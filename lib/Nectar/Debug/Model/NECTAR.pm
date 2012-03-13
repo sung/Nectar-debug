@@ -7,9 +7,9 @@ __PACKAGE__->config(
     schema_class => 'Nectar::Schema::NECTAR',
     
     connect_info => {
-        dsn => 'dbi:mysql:dbname=NECTAR;host=fs01',
-        user => 'sung',
-        password => 'snrnsk',
+        dsn => 'dbi:mysql:dbname=NECTAR;host=DB_HOST',
+        user => 'USER',
+        password => 'PWD',
     }
 );
 
